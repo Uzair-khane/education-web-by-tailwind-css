@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Page</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            transition: 10ms;
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class=" bg-gray-900 text-white">
+
+    <!-- HEADER -->
+    <div class="flex justify-between items-center bg-black text-white py-2 px-8">
+        <p class="text-sm">
+            This is an educational <span class="text-yellow-400 font-semibold">HTML CSS</span> template by TemplateMo.
+        </p>
+        <div class="flex space-x-4 text-[18px]">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="relative flex justify-between items-center bg-gray-700 bg-opacity-[0.5] px-8 py-4 z-10">
+        <h1 class="text-2xl font-bold">EDU METTINGS</h1>
+        <ul class="flex space-x-6 text-white">
+            <li><a href="#" class="hover:text-yellow-400">HOME</a></li>
+            <li><a href="#meating" class="hover:text-yellow-400">MEETING</a></li>
+            <li><a href="#apply" class="hover:text-yellow-400">APPLY NOW</a></li>
+            <li><a href="#" class="hover:text-yellow-400">PAGES</a></li>
+            <li><a href="#course-img-div" class="hover:text-yellow-400">COURSES</a></li>
+            <li><a href="#CONTACT" class="hover:text-yellow-400">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- VIDEO BACKGROUND -->
+     <div class="">
+    <video class="absolute top-0 left-0 w-full h-[1000px] object-cover -z-10 opacity-[0.5]" src="./images/3209298-uhd_3840_2160_25fps.mp4" muted autoplay loop>
+         </video> 
+         <!-- data div -->
+          <div id="data" class="mt-[60px] ml-11 " >
+           <h1 class="text-white text-xl sm:text-3xl md:text-5xl lg:text-6xl font-bold font-sans">Hello Students</h1>
+           <h1 class="text-white text-[35px] font-bold font-sans w-[400px] mt-4">Welcome to Education</h1>
+           <p class="text-white text-[18px]  font-sans w-[650px] mt-4" >This is an edu meeting HTML CSS template provided by <span class="text-sky-500">TemplateMo</span> website. This is a Bootstrap v5.1.3 layout. The video background is taken from Pexels website, a group of young people by <span class="text-sky-500">premester</span>.</p>
+           <button class="w-[160px] h-[45px] bg-red-700 rounded-[25px] border-none hover:bg-red-900 hover:cursor-pointer mt-[30px]">JOIN US NOW ! </button>
+        </div>
+
+
+        </div>
+
+        <!-- card section -->
+        <div class="w-full h-[1450px] mt-[120px]  " style="background-image: url(./images/meetings-page-bg.jpg);">
+
+            <div class="w-full h-[700px] flex md:flex-nowrap items-center justify-center mt-[120px] gap-[30px]"> <!-- 1 st card -->
+                <div class="bg-red-900 w-[350px] h-[290px] -mt-[600px]  rounded-[15px] flex flex-col justify-center items-center">
+                    <img src="./images/service-icon-01.png" class="w-[50px] h-[50px]" alt="">
+                    <h1 class="text-2xl mt-2">Online Meeting</h1>
+                    <p class="w-[280px] text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic expedita sed consectetur sequi cupiditate? Incidunt obcaecati adipisci voluptas, dicta officiis est doloremque, architecto beatae atque non quisquam alias facere nesciunt.</p>
+                </div>
+                <!-- 2 card -->
+                <div class="bg-red-900 w-[350px] h-[290px] -mt-[600px] rounded-[15px] flex-col justify-center items-center flex">
+                    <img src="./images/service-icon-01.png" class="w-[50px] h-[50px]" alt="">
+                    <h1 class="text-2xl mt-2">Online Meeting</h1>
+                    <p class="w-[280px] text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic expedita sed consectetur sequi cupiditate? Incidunt obcaecati adipisci voluptas, dicta officiis est doloremque, architecto beatae atque non quisquam alias facere nesciunt.</p>
+                </div>
+                <!-- 3 card -->
+                <div class="bg-red-900 w-[350px] h-[290px] -mt-[600px] rounded-[15px] flex-col justify-center items-center flex">
+                    <img src="./images/service-icon-01.png" class="w-[50px] h-[50px]" alt="">
+                    <h1 class="text-2xl mt-2">Online Meeting</h1>
+                    <p class="w-[280px] text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic expedita sed consectetur sequi cupiditate? Incidunt obcaecati adipisci voluptas, dicta officiis est doloremque, architecto beatae atque non quisquam alias facere nesciunt.</p>
+                </div>
+            </div>
+        
+           <h1 id="meating" class="text-center text-3xl font-bold -mt-[300px]">Upcoming Meetings</h1>
+
+           <hr class="w-[80%] ml-[150px] mt-6 opacity-[0.4]">
+
+
+           <div class="teaching-section flex justify-center gap-5 mt-16">
+            <!-- 1st -->
+            <div class="w-[300px] h-[420px] bg-white rounded-[15px]">
+              <h1 class="m-8 text-black font-bold text-xl">Meeting Catgories</h1>
+              <p class="ml-[40px] text-[18px]   text-black">Cras et metus vestibulum</p>
+              <p class="ml-[40px] text-[18px]   text-black">Cras et metus vestibulum</p>
+              <p class="ml-[40px] text-[18px]   text-black">Cras et metus vestibulum</p>
+              <p class=" ml-[40px] text-[18px]  text-black">Cras et metus vestibulum</p>
+              <p class=" ml-[40px] text-[18px]   text-black">Cras et metus vestibulum</p>
+              <p class=" ml-[40px] text-[18px]   text-black">Cras et metus vestibulum</p>
+<button  class="w-[230px] h-[35px] bg-red-700 rounded-[25px] border-none hover:bg-red-900 hover:cursor-pointer m-[25px]  mt-11"> ALL UPCOMMING MEETING</button>
+            </div>
+
+            <!-- 2nd -->
+            <div class="w-[360px] h-[340px] bg-white rounded-[15px]">
+
+                <div class="w-[360px] h-[200px] rounded-t-lg " style="background-image: url(./images/meeting-01.jpg);">
+                    <div class="w-[60px] h-[30px]  bg-white rounded text-black absolute m-5"><p class="text-center font-bold">$21.41</p></div>
+                 
+                   
+
+                </div>
+                <div class=" flex m-6">
+                    <div>
+                       <p class="text-red-800 font-bold text-xl">NOV</p>
+                       <p class="text-black font-bold text-xl">10</p>
+                    </div>
+                    <h1 class="text-black font-bold text-xl ml-6">New Lecturers Meeting</h1>
+
+                   </div>
+                   <p class="-mt-10 ml-[100px] w-[280px] text-black">Lorem ipsum dolor sit amet consectetur </p>
+            </div>
+           <!-- 3nd -->
+            <div class="w-[360px] h-[390px] bg-white rounded-[15px]">
+
+                <div class="w-[360px] h-[200px] rounded-t-lg " style="background-image: url(./images/meeting-02.jpg);">
+                    <div class="w-[60px] h-[30px]  bg-white rounded text-black absolute m-5"><p class="text-center font-bold">$21.41</p></div>
+                 
+                   
+
+                </div>
+                <div class=" flex m-6">
+                    <div>
+                       <p class="text-red-800 font-bold text-xl">NOV</p>
+                       <p class="text-black font-bold text-xl">10</p>
+                    </div>
+                    <h1 class="text-black font-bold text-xl ml-6">New Lecturers Meeting</h1>
+
+                   </div>
+                   <p class="-mt-10 ml-[100px] w-[280px] text-black">Lorem ipsum dolor sit amet consectetur </p>
+            </div>
+
+
+            
+
+           </div>
+          
+
+           <!-- 1 2 and 3 card termination -->
+
+
+           <!-- 4 car is start -->
+
+           <!-- parent  -->
+ 
+           <div class="flex justify-end mr-[100px] gap-4 mt-6" id="meating">
+            <div class="w-[360px] h-[390px] bg-white rounded-[15px]">
+
+                <div class="w-[360px] h-[200px] rounded-t-lg " style="background-image: url(./images/meeting-03.jpg);">
+                    <div class="w-[60px] h-[30px]  bg-white rounded text-black absolute m-5"><p class="text-center font-bold">$21.41</p></div>
+                 
+                   
+
+                </div>
+                <div class=" flex m-6">
+                    <div>
+                       <p class="text-red-800 font-bold text-xl">NOV</p>
+                       <p class="text-black font-bold text-xl">10</p>
+                    </div>
+                    <h1  class="text-black font-bold text-xl ml-6">New Lecturers Meeting</h1>
+
+                   </div>
+                   <p class="-mt-10 ml-[100px] w-[280px] text-black">Lorem ipsum dolor sit amet consectetur </p>
+            </div>
+           
+   <!-- 4 card termination  -->
+
+   <!-- 5 -->
+   <div class="w-[360px] h-[340px] bg-white rounded-[15px]">
+
+    <div class="w-[360px] h-[200px] rounded-t-lg " style="background-image: url(./images/meeting-04.jpg);">
+        <div class="w-[60px] h-[30px]  bg-white rounded text-black absolute m-5"><p class="text-center font-bold">$21.41</p></div>
+     
+       
+
+    </div>
+    <div class=" flex m-6">
+        <div>
+           <p class="text-red-800 font-bold text-xl">NOV</p>
+           <p class="text-black font-bold text-xl">10</p>
+        </div>
+        <h1 class="text-black font-bold text-xl ml-6">New Lecturers Meeting</h1>
+
+       </div>
+       <p class="-mt-10 ml-[100px] w-[280px] text-black">Lorem ipsum dolor sit amet consectetur </p>
+</div>
+           
+
+
+
+
+
+
+
+           
+
+ </div>
+ <!-- card main div termination div -->
+
+
+
+      
+</div>
+   <!-- apply div section is starting here -->
+
+   <div id="apply" style="background-image:url(./images/apply-bg.jpg) ;" class="w-full h-[800px] bg-fixed  ">
+
+    <div id="degree-cards-main" class="flex gap-6 justify-center pt-[100px]">
+
+     <div id="degree-card-parrent" class="flex flex-col gap-5 ">
+        <!-- degree card 1 -->
+        <div id="degree-card1" class="w-[600px] h-[250px]  -ml-11" style="background-color: rgba(122, 122, 122, 0.297);">
+          <h1 class="text-white font-bold text-2xl p-4">APPLY FOR BACHELOR DEGREE</h1>
+          <p class="w-[500px] text-white p-4">You are allowed to use this edu meeting CSS template for your school or university or business. You can feel free to modify or edit this layout</p>
+          <button class="w-[150px] h-[40px] bg-red-800 text-white rounded-[20px] m-4">JOIN US NOW!</button>
+        </div>
+        <!-- degree card 2 -->
+        <div id="degree-card1" class="w-[600px] h-[250px] -ml-11 " style="background-color: rgba(122, 122, 122, 0.297);">
+            <h1 class="text-white font-bold text-2xl p-4">APPLY FOR BACHELOR DEGREE</h1>
+            <p class="w-[500px] text-white p-4">You are allowed to use this edu meeting CSS template for your school or university or business. You can feel free to modify or edit this layout</p>
+            <button class="w-[150px] h-[40px] bg-yellow-600 text-white rounded-[20px] m-4">JOIN US NOW!</button>
+          </div>
+     </div>
+
+     <!-- meeting section 2nd child -->
+      <div id="tamplete" class="w-[450px] bg-white h-[600px] ml-16 rounded-[20px]">
+        <h1 class="text-yellow-500 text-[21px] font-bold m-5">About Edu Meeting HTML Template</h1>
+        <p class="text-black m-6">If you want to get the latest  <span class="text-sky-500 hover:text-yellow-300"> collection of HTML CSS </span> templates for your websites, you may visit Too CSS website. If you need a working contact form script, please visit our <span class="text-sky-500 hover:text-yellow-300">contact page</span> for more info</p>
+        <h1 class="text-black text-[21px] font-bold m-5">HTML CSS Bootstrap Layout</h1>
+        <p class="text-black m-6">If you want to get the latest  <span class="text-sky-500 hover:text-yellow-300"> collection of HTML CSS </span> tworking contact form s visit our <span class="text-sky-500 hover:text-yellow-300">contact page</span> for more info</p>
+        <h1 class="text-black text-[21px] font-bold m-5">Please tell your friends</h1>
+        <p class="text-black m-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum laudantium quibusdam, beatae perspiciatis asperiores iste modi consequuntur exercitationem quos non, eaque et, similique reprehenderit voluptas minus voluptatibus necessitatibus. A, quibusdam.</p>
+      </div>
+
+    </div>
+  
+
+   </div>
+   <!-- aply parent div terminaiton -->
+
+
+   <!-- courses section start here -->
+    <div id="course-img-div" class=" w-full h-[750px]" style="background-image: url(./images/meetings-bg.jpg);" >
+    <h1 class=" text-white text-[28px] font-bold pl-28 pt-28 ">Our Popular Courses</h1>
+    <hr class="w-[80%] mt-7 ml-28">
+        <div id="course-card-main " class="flex justify-center gap-7 mt-16">
+          <!-- cards -->
+           <!-- 1 -->
+            <div id="course-card1" class="w-[260px] h-[350px] bg-white ">
+               <img src="./images/course-01.jpg" alt="" class="w-[260px] h-[165px]">
+
+               <h1 class="w-[160px] text-black text-[18px] ml-12 mt-6" style="font-weight:600;">downlode free css layout for bussines</h1>
+
+               <div id="star-icon " class="flex  justify-between mt-16">
+                <i class="fa-solid fa-star   text-yellow-400 w-[30px] h-[30px] " ></i>
+                <i class="fa-solid fa-star   text-yellow-400 w-[30px] h-[30px]" ></i>
+                <i class="fa-solid fa-star   text-yellow-400 w-[30px] h-[30px]" ></i>
+                <i class="fa-solid fa-star   text-yellow-400 w-[30px] h-[30px] mr-10" ></i>
+                <h1 class="text-black font-bold">$243.423</h1>
+               </div>
+            </div>
+
+            <!-- 2 -->
+            <div id="course-card1" class="w-[260px] h-[350px] bg-white">
+                <img src="./images/course-02.jpg" alt="" class="w-[260px] h-[165px]">
+ 
+                <h1 class="w-[160px] text-black text-[18px] ml-12 mt-6" style="font-weight:600;">downlode free css layout for bussines</h1>
+ 
+                <div id="star-icon " class="flex  justify-between mt-16">
+                 <i class="fa-solid fa-star   text-yellow-400 w-[30px] h-[30px] " ></i>
+                 <i class="fa-solid fa-star   text-yellow-400 w-[30px] h-[30px]" ></i>
+                 <i class="fa-solid fa-star   text-yellow-400 w-[30px] h-[30px]" ></i>
+                 <i class="fa-solid fa-star   text-yellow-400 w-[30px] h-[30px] mr-10" ></i>
+                 <h1 class="text-black font-bold">$243.423</h1>
+                </div>
+             </div>
+
+             <!-- 3 -->
+             <div id="course-card1" class="w-[260px] h-[350px] bg-white ">
+                <img src="./images/course-03.jpg" alt="" class="w-[260px] h-[165px]">
+ 
+                <h1 class="w-[160px] text-black text-[18px] ml-12 mt-6" style="font-weight:600;">downlode free css layout for bussines</h1>
+ 
+                <div id="star-icon " class="flex  justify-between mt-16">
+                 <i class="fa-solid fa-star   text-yellow-400 w-[30px] h-[30px] " ></i>
+                 <i class="fa-solid fa-star   text-yellow-400 w-[30px] h-[30px]" ></i>
+                 <i class="fa-solid fa-star   text-yellow-400 w-[30px] h-[30px]" ></i>
+                 <i class="fa-solid fa-star   text-yellow-400 w-[30px] h-[30px] mr-10" ></i>
+                 <h1 class="text-black font-bold">$243.423</h1>
+                </div>
+             </div>
+             <!-- 4 -->
+             <div id="course-card1" class="w-[260px] h-[350px] bg-white ">
+                <img src="./images/course-04.jpg" alt="" class="w-[260px] h-[165px]">
+ 
+                <h1 class="w-[160px] text-black text-[18px] ml-12 mt-6" style="font-weight:600;">downlode free css layout for bussines</h1>
+ 
+                <div id="star-icon " class="flex  justify-center mt-16 ">
+                 <i class="fa-solid fa-star   text-yellow-400 w-[30px] h-[30px] " ></i>
+                 <i class="fa-solid fa-star   text-yellow-400 w-[30px] h-[30px]" ></i>
+                 <i class="fa-solid fa-star   text-yellow-400 w-[30px] h-[30px]" ></i>
+                 <i class="fa-solid fa-star   text-yellow-400 w-[30px] h-[30px] mr-10" ></i>
+                 <h1 class="text-black font-bold">$243.423</h1>
+                </div>
+             </div>
+
+    
+
+    </div>
+    </div>
+    <!-- courses section end here -->
+
+ <!-- fact section start -->      
+
+<div  class="w-full h-[800px]" style="background-image: url(./images/facts-bg.jpg) ; background-size: cover;">
+
+
+<h1 class="text-[37px] font-bold w-[500px] text-white pt-[140px] pl-[100px]">A Few Facts About Our University</h1>
+
+<div id="fact-main" class="flex justify-center gap-10">
+<div id="range" class="w-[45%] h-[500px] grid grid-cols-2 grid-rows-2 gap-4 mt-10 -ml-[40px]">
+        <!-- range1 -->
+      <div id="range1" class="w-[250px] h-[150px]  rounded-[15px]" style="background-color: rgba(128, 128, 128, 0.329);">
+         <h1 class="text-center text-yellow-600 text-4xl font-bold pt-[20px]">96%</h1>
+        <p class="text-white font-bold text-2xl text-center pt-[30px]">Succeed student</p>
+        </div>
+      <!-- range2 -->
+      <div id="range1" class="w-[250px] h-[150px]  rounded-[15px] mt-10" style="background-color: rgba(128, 128, 128, 0.329);">
+        <h1 class="text-center text-yellow-600 text-4xl font-bold pt-[20px]">96%</h1>
+       <p class="text-white font-bold text-2xl text-center pt-[30px]">Succeed student</p>
+       </div>
+       <!-- range3 -->
+       <div id="range1" class="w-[250px] h-[150px]  rounded-[15px]" style="background-color: rgba(128, 128, 128, 0.329);">
+        <h1 class="text-center text-yellow-600 text-4xl font-bold pt-[20px]">96%</h1>
+       <p class="text-white font-bold text-2xl text-center pt-[30px]">Succeed student</p>
+       </div>
+       <!-- range4 -->
+       <div id="range1" class="w-[250px] h-[150px] rounded-[15px] mt-10" style="background-color: rgba(128, 128, 128, 0.329);">
+        <h1 class="text-center text-yellow-600 text-4xl font-bold pt-[20px]">96%</h1>
+       <p class="text-white font-bold text-2xl text-center pt-[30px]">Succeed student</p>
+       </div>
+      </div>
+      <!-- vidio div -->
+      <div id="vidio-div"  class="w-[350px] h-[320px] mt-[100px] ml-20 rounded-[23px] flex justify-center items-center" style="background-image: url(./images/video-item-bg.jpg);box-sizing: border-box; background-size: cover;">
+        <a href=""><button class="text-white w-[100px] h-[100px] text-center text-[45px] "><i class="fa-solid fa-play"></i></button></a>
+      </div>
+    </div>
+   
+
+</div>
+
+
+
+</div> <!-- fact section end -->
+       
+<!-- form section start -->
+ <div id="CONTACT" class="w-full h-[1000px]" style="background-image: url(./images/meetings-bg.jpg);">
+
+    <div id="form-parrent-div" class="flex justify-center gap-10 p-36">
+       <!-- form -->
+        <div id="form-div" class="w-[1500px] h-[500px] bg-white rounded-[20px] mt-12 -ml-28">
+            <h1 class="text-[28px] font-bold text-black p-6 opacity-[0.8]">Let's get in touch</h1>
+            <hr class="w-[800px]">
+            <!-- 1 input -->
+            <input type="text" name="" id="" placeholder="YOURNAME..*" style="width: 220px; height: 40px; color: rgba(0, 0, 0, 0.767); border-radius: 25px; outline: none; background-color: rgba(150, 143, 143, 0.272); padding-left: 15px; margin: 20px;  ">
+            <!-- 2 input -->
+            <input type="text" name="" id="" placeholder="YOURNAME..*" style="width: 220px; height: 40px; color: rgba(0, 0, 0, 0.767); border-radius: 25px; outline: none; background-color: rgba(150, 143, 143, 0.272); padding-left: 15px; margin: 20px; ">
+            <!-- 3 input -->
+            <input type="text" name="" id="" placeholder="YOURNAME..*" style="width: 220px; height: 40px; color: rgba(0, 0, 0, 0.767); border-radius: 25px; outline: none; background-color: rgba(150, 143, 143, 0.272); padding-left: 15px; margin: 20px; ">
+            <!-- comment section -->
+             <textarea rows="7" cols="100" name="" id="" placeholder="YOUR MASSAGE..." class="w-[750px] h[400px] " style="background-color: rgba(150, 143, 143, 0.272); margin-left: 20px; padding: 20px; border-radius: 25px; outline: none ; color: black;"></textarea>
+             <button class="w-[220px] h-[45px] bg-red-900 rounded-[25px] border-none hover:bg-red-900 hover:cursor-pointer mt-[30px]  ml-6">SEND MASSAGE NOW ! </button>
+        </div>
+        <!-- form end -->
+
+        <!-- address -->
+        <div id="address" class="w-[550px] h-[560px] bg-red-900 rounded-[20px] mt-4">
+            <h1 class="text-[16px] text-white font-bold ml-[30px] mt-[20px] w-[150px]">PHONE NUMBER  <br> 03149535884
+            </h1>
+            <hr class="w-[190px] ml-[30px] mt-[40px]">
+            
+            <h1 class="text-[16px] text-white font-bold ml-[30px] mt-[20px] w-[150px]">EMAIL <br>uzair1234@gail.com
+            </h1>
+            <hr class="w-[190px] ml-[30px] mt-[40px]">
+            <h1 class="text-[16px] text-white font-bold ml-[30px] mt-[20px] w-[150px]">website url <br>www..gymnasium.com
+            </h1>
+            <hr class="w-[190px] ml-[30px] mt-[40px]">
+            <h1 class="text-[16px] text-white font-bold ml-[30px] mt-[20px] w-[150px]">Address <br>university town peshawer 
+            </h1>
+            <hr class="w-[190px] ml-[30px] mt-[40px]">
+            <h1 class="text-[16px] text-white font-bold ml-[30px] mt-[20px] w-[150px]">skills <br> full stack devloper
+            </h1>
+        
+        </div>
+    
+    </div>
+
+
+     
+
+    <hr class="w-full" style="opacity: 0.4;">
+
+    <h1 class="text-center font-bold mt-9">Copyright © 2022 Edu Meeting Co., Ltd. All Rights Reserved. <br>
+    
+        Design: <span class="text-yellow-500">TemplateMo</span></h1>
+ 
+ </div>
+ <!-- form section end -->
+
+</body>
+</html>
